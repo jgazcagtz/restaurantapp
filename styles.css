@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fef4f4; /* Fondo suave en gris claro con un toque cálido */
+    color: #333;
+}
+
+header {
+    background-color: #c8102e; /* Rojo vibrante para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    background-color: #ffffff; /* Fondo blanco para los productos */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0; /* Borde gris claro */
+    margin-bottom: 1em; /* Espacio entre la imagen y el título */
+}
+
+.product-content {
+    padding: 2em; /* Espacio interno */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido y el botón estén separados */
+}
+
+.product h3 {
+    font-size: 1.4em; /* Reducido para más espacio */
+    margin: 0 0 0.5em; /* Espacio entre el título y la descripción */
+    font-weight: 700;
+    color: #c8102e; /* Rojo para el título */
+}
+
+.product p {
+    font-size: 1em; /* Reducido para más espacio */
+    color: #555; /* Gris oscuro para la descripción */
+    margin: 0 0 1em; /* Espacio entre la descripción y el botón */
+}
+
+.whatsapp-button {
+    background-color: #d62839; /* Rojo oscuro para el botón */
+    border: none;
+    color: white;
+    padding: 0.75em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1em auto 1em; /* Espacio arriba y abajo del botón */
+}
+
+.whatsapp-button:hover {
+    background-color: #a02429; /* Rojo más oscuro en hover */
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .product h3 {
+        font-size: 1.2em; /* Reducido para mejor adaptación en pantallas pequeñas */
+    }
+
+    .product p {
+        font-size: 0.9em; /* Reducido para mejor adaptación en pantallas pequeñas */
+    }
+
+    .whatsapp-button {
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+    }
+}
